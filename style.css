@@ -1,0 +1,12 @@
+#nav-img{
+    height: 35.273px;
+}
+
+.nav-bg{
+    background-color: rgba(251, 251, 253, 1);
+}
+
+.border-center{
+    display: flex;
+    justify-content: center;
+}
