@@ -5,9 +5,9 @@ body{
 }
 
 h2{
-    font-size: 56px;
+    /* font-size: 56px; */
     font-weight: 600;
-    line-height: 72px;
+    /* line-height: 72px; */
 }
 
 header{
@@ -30,7 +30,9 @@ header{
 
 #header-bg-img{
     background-image: url(/images/header-bg-img.jpg);
-    background-size: cover;
+    /* background-size: cover; */
+    object-fit: cover;
+    background-repeat: no-repeat;
     background-blend-mode: multiply;
     color: aliceblue;
 }
@@ -40,6 +42,7 @@ header{
 ============================ */
 .card-img-top {
     height: 240px;
+    object-fit: cover;
   }
 
 /* ==================
@@ -69,9 +72,208 @@ eZway Social Suitable for
   .col-md-6 {
     padding: 0;
   }
+
+
+  /* ==================
+Why Choose Us? started
+============================ */
   
+.img-6{
+    width: 112px;
+    height: 114px;
+}
+
+.fixed-height{
+    height: 400px;
+}
+
+.section-bg{
+    background-color: #FAFAFC;
+}
+
+/* 
+Slider css  start----------------------------------------
+*/
+
+/* Import Google font - Poppins */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+/* #slider-section {
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to left top, #031A9A, #8B53FF);
+} */
+.wrapper {
+  /* max-width: 1100px; */
+  width: 100%;
+  /* position: relative; */
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  /* text-align: center; */
+  /* line-height: 50px; */
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+/* .carousel :where(.card, .img) { */
+.carousel :where(.card) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  /* padding-bottom: 15px; */
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  /* background: #8B53FF; */
+  /* height: 148px; */
+  /* width: 148px; */
+  border-radius: 50%;
+}
+.card .img img {
+    height: 60px;
+    width: 60px;
+  /* width: 140px; */
+  /* height: 140px; */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  /* font-weight: 500; */
+  font-size: 1.56rem;
+  /* margin: 30px 0 5px; */
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+/* slider css ends  */
+.testimonial-p{
+    margin-bottom: 0px;
+}
+
+.testimonial-second-div{
+    /* position: relative;
+    margin-right: 20px; */
+}
+.carousel-heading{
+    margin-bottom: 0;
+}
+
+/* 
+Slider css  start----------------------------------------
+*/
+.second-background{
+    position: relative;
+    background: url('/images/second-backgroundpng.png') center/cover no-repeat;
+    height: 300px; 
+  }
+
+/* .second-background h2{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 32px; 
+color: black; 
+text-align: center;
+}   */
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black; 
+  }
+
+  .centered-h2 {
+    width: 100%;
+    font-size: 32px; 
+  }
+
+  .centered-button {
+    color: white;
+    margin-top: 10px; 
+  }
+  /* =================================================== */
+  /* 
+  footer start -------------------------  
+  */
+ 
 
 
+/* =========================================================================== */
 /* Small Screen  */
 @media screen and (max-width: 576px) {
     .dummy-area {
