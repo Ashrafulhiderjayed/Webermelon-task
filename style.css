@@ -1,7 +1,11 @@
+body, html {
+    overflow-x: hidden;
+  }
 body{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box; 
     /* max-width: 1200px; */
+    overflow-x: hidden;
 }
 
 h2{
@@ -89,6 +93,13 @@ eZway Social Suitable for
     padding: 0;
   }
 
+  .orange-bg{
+    background-color: #FF8A00;
+    border-radius: 10%;
+    color: white;
+    padding: 1%;
+  }
+
 
   /* ==================
 Why Choose Us? started
@@ -100,7 +111,7 @@ Why Choose Us? started
 }
 
 .fixed-height{
-    height: 400px;
+    height: 420px;
 }
 
 .section-bg{
